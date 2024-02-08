@@ -9,8 +9,6 @@ describe("Memory leak test", () => {
   });
 
   afterAll(() => {
-    nock.cleanAll();
     nock.restore();
-    nock.activate();
   });
 });
